@@ -1,0 +1,185 @@
+FpDebug: Width = 1024 ; Height = 1024
+
+***** InitGraphics *****
+
+Found 2 GLFW Required Instance Extensions:
+	VK_KHR_surface
+	VK_KHR_win32_surface
+
+***** Init01Instance *****
+
+4 Instance Layers originally wanted:
+	VK_LAYER_LUNARG_core_validation
+	VK_LAYER_LUNARG_object_tracker
+	VK_LAYER_LUNARG_parameter_validation
+	VK_LAYER_NV_optimus
+vkEnumerateInstanceLayerProperties: Successful
+
+8 Instance Layers actually available:
+0x004030cd   1  'VK_LAYER_NV_optimus'  'NVIDIA Optimus layer'
+0x00402083   1  'VK_LAYER_OW_OVERLAY'  'Overwolf Overlay Layer'
+0x00402083   1  'VK_LAYER_OW_OBS_HOOK'  'OWOBS hook'
+0x004030d8   1  'VK_LAYER_OBS_HOOK'  'Open Broadcaster Software hook'
+0x004030cf   1  'VK_LAYER_VALVE_steam_overlay'  'Steam Overlay Layer'
+0x004030cf   1  'VK_LAYER_VALVE_steam_fossilize'  'Steam Pipeline Caching Layer'
+0x00402088   1  'VK_LAYER_EOS_Overlay'  'Vulkan overlay layer for Epic Online Services'
+0x00402088   1  'VK_LAYER_EOS_Overlay'  'Vulkan overlay layer for Epic Online Services'
+
+Will now ask for 1 Instance Layers:
+	VK_LAYER_NV_optimus
+
+3 Instance Extensions originally wanted:
+	VK_KHR_surface
+	VK_KHR_win32_surface
+	VK_EXT_debug_report
+vkEnumerateInstanceExtensionProperties: Successful
+
+13 Instance Extensions actually available:
+0x00000001  'VK_KHR_device_group_creation'
+0x00000001  'VK_KHR_external_fence_capabilities'
+0x00000001  'VK_KHR_external_memory_capabilities'
+0x00000001  'VK_KHR_external_semaphore_capabilities'
+0x00000002  'VK_KHR_get_physical_device_properties2'
+0x00000001  'VK_KHR_get_surface_capabilities2'
+0x00000019  'VK_KHR_surface'
+0x00000001  'VK_KHR_surface_protected_capabilities'
+0x00000006  'VK_KHR_win32_surface'
+0x0000000a  'VK_EXT_debug_report'
+0x00000002  'VK_EXT_debug_utils'
+0x00000004  'VK_EXT_swapchain_colorspace'
+0x00000001  'VK_NV_external_memory_capabilities'
+
+Will now ask for 3 Instance Extensions
+	VK_KHR_surface
+	VK_KHR_win32_surface
+	VK_EXT_debug_report
+vkCreateInstance: Successful
+glfwCreateWindowSurface: Successful
+
+***** Init02CreateDebugCallbacks *****
+
+***** Init03PhysicalDeviceAndGetQueueFamilyProperties *****
+vkEnumeratePhysicalDevices - 1: Successful
+
+1 physical devices found.
+vkEnumeratePhysicalDevices - 2: Successful
+ 
+
+Device  0:
+	API version: 4206797
+	Driver version: 4206797
+	Vendor ID: 0x10de
+	Device ID: 0x1b80
+	Physical Device Type: 2 = (Discrete GPU)
+	Device Name: NVIDIA GeForce GTX 1080
+	Pipeline Cache Size: 49
+Device #0 selected ('NVIDIA GeForce GTX 1080')
+
+Physical Device Features:
+geometryShader =  1
+tessellationShader =  1
+multiDrawIndirect =  1
+wideLines =  1
+largePoints =  1
+multiViewport =  1
+occlusionQueryPrecise =  1
+pipelineStatisticsQuery =  1
+shaderFloat64 =  1
+shaderInt64 =  1
+shaderInt16 =  1
+
+Image Formats Checked:
+Format VK_FORMAT_R32G32B32A32_SFLOAT: 0x0001d401 0x0001dd83  0x00000058
+Format VK_FORMAT_R8G8B8A8_UNORM: 0x0001d401 0x0001dd83  0x20000058
+Format VK_FORMAT_B8G8R8A8_UNORM: 0x0001d401 0x0001dd83  0x00000058
+Format VK_FORMAT_B8G8R8A8_SRGB: 0x0001d401 0x0001dd81  0x00000000
+
+11 Memory Types:
+Memory  0: 
+Memory  1: 
+Memory  2: 
+Memory  3: 
+Memory  4: 
+Memory  5: 
+Memory  6: 
+Memory  7:  DeviceLocal
+Memory  8:  HostVisible HostCoherent
+Memory  9:  HostVisible HostCoherent HostCached
+Memory 10:  DeviceLocal HostVisible HostCoherent
+
+3 Memory Heaps:
+Heap 0:  size = 0xf8f00000 DeviceLocal
+Heap 1:  size = 0xfdb1d000
+Heap 2:  size = 0x0d600000 DeviceLocal
+
+Found 3 Queue Families:
+	0: Queue Family Count = 16  ;    Graphics Compute Transfer
+	1: Queue Family Count =  2  ;    Transfer
+	2: Queue Family Count =  8  ;    Compute Transfer
+
+***** Init04LogicalDeviceAndQueue *****
+vkEnumerateDeviceLayerProperties: Successful
+
+5 physical device layers enumerated:
+0x004030cd   1  'VK_LAYER_NV_optimus'  'NVIDIA Optimus layer'
+vkEnumerateDeviceExtensionProperties: Successful
+	0 device extensions enumerated for 'VK_LAYER_NV_optimus':
+
+0x00402083   1  'VK_LAYER_OW_OVERLAY'  'Overwolf Overlay Layer'
+vkEnumerateDeviceExtensionProperties: Successful
+	0 device extensions enumerated for 'VK_LAYER_OW_OVERLAY':
+
+0x00402083   1  'VK_LAYER_OW_OBS_HOOK'  'OWOBS hook'
+vkEnumerateDeviceExtensionProperties: Successful
+	0 device extensions enumerated for 'VK_LAYER_OW_OBS_HOOK':
+
+0x004030d8   1  'VK_LAYER_OBS_HOOK'  'Open Broadcaster Software hook'
+vkEnumerateDeviceExtensionProperties: Successful
+	0 device extensions enumerated for 'VK_LAYER_OBS_HOOK':
+
+0x004030cd   1  'VK_LAYER_NV_optimus'  'NVIDIA Optimus layer'
+vkEnumerateDeviceExtensionProperties: Successful
+	0 device extensions enumerated for 'VK_LAYER_NV_optimus':
+
+vkCreateLogicalDevice: Successful
+
+***** Init05DataBuffer *****
+vkCreateBuffer: Successful
+Buffer vmr.size = 256
+Buffer vmr.alignment = 256
+Buffer vmr.memoryTypeBits = 0x00000781
+
+***** Found given memory flag (0x00000002) and type (0x00000781): i = 8 *****
+vkAllocateMemory: Successful
+vkBindBufferMemory: Successful
+
+***** Init05DataBuffer *****
+vkCreateBuffer: Successful
+Buffer vmr.size = 256
+Buffer vmr.alignment = 256
+Buffer vmr.memoryTypeBits = 0x00000781
+
+***** Found given memory flag (0x00000002) and type (0x00000781): i = 8 *****
+vkAllocateMemory: Successful
+vkBindBufferMemory: Successful
+
+***** Init05DataBuffer *****
+vkCreateBuffer: Successful
+Buffer vmr.size = 256
+Buffer vmr.alignment = 256
+Buffer vmr.memoryTypeBits = 0x00000781
+
+***** Found given memory flag (0x00000002) and type (0x00000781): i = 8 *****
+vkAllocateMemory: Successful
+vkBindBufferMemory: Successful
+
+***** Init05DataBuffer *****
+vkCreateBuffer: Successful
+Buffer vmr.size = 228368
+Buffer vmr.alignment = 16
+Buffer vmr.memoryTypeBits = 0x00000781
+
+***** Found given memory flag (0x00000002) and type (0x00000781): i = 8 *****
+vkAllocateMemory: Successful
+vkBindBufferMemory: Successful
+InitDataBuffer: Successful
